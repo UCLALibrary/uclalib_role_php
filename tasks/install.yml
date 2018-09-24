@@ -1,0 +1,6 @@
+---
+- name: Install PHP and required extensions
+  package:
+    name: "{{ item }}"
+    state: installed
+  with_items: "{{ php_pkgs }}"

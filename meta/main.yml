@@ -1,0 +1,14 @@
+---
+
+dependencies: []
+
+galaxy_info:
+  author: "Anthony Vuong- https://github.com/avuong/"
+  description: "PHP Role to install"
+  company: "UCLA Library"
+  license: "reference license.txt"
+  min_ansible_version:
+  platforms:
+  - name: EL
+    versions:
+    - 7
