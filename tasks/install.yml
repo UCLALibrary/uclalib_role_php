@@ -4,3 +4,11 @@
     name: "{{ item }}"
     state: installed
   with_items: "{{ php_pkgs }}"
+
+- name: Upload php.ini
+  copy:
+    src: php.ini
+    dest: /etc/php.ini
+    owner: root
+    group: root
+    mode: 0644
