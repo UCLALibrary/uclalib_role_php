@@ -1,8 +1,9 @@
 ---
 - name: Install PHP and required extensions
-  package:
+  yum:
     name: "{{ item }}"
-    state: installed
+    state: present
+    disable_excludes: all
   with_items: "{{ php_pkgs }}"
 
 - name: Upload php.ini
