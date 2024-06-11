@@ -1,3 +1,12 @@
 ---
+
+# Version of PHP to install
+# Available versions: 7.2, 7.3, 7.4, 8.0, 8.2
+php_version: ""
+
+# List of PHP packages to install
+# Unless you are using the default PHP module
+# the first list item must define the module version (e.g. @php:7.3)
 php_pkgs:
-  - php
+  - "@php:{{ php_version }}"
+  - "php"

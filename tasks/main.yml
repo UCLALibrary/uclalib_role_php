@@ -1,4 +1,6 @@
 ---
-
-- name: Install PHP
-  include_tasks: install.yml
+- name: Install PHP and specified packages
+  yum:
+    name: "{{ php_pkgs }}"
+    state: present
+    disable_excludes: all
